@@ -1,0 +1,114 @@
+
+.page{
+ /* background: linear-gradient(115deg,#ff1dce,#9932cc);*/
+ background: linear-gradient(-205deg,#0034b8,#0fcbff,#0034b8);
+
+  height: 140vh;
+  
+  text-align: center;
+}
+.topu{
+  padding-top: 60px;
+  margin-bottom: 10px;
+}
+.topu h1{
+  background: linear-gradient(to right, #fff, #ffffff, #fff);
+  -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    font-size: 50px;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+.upload-artwork-container h2{
+  background: linear-gradient(to right, #12096d, #0592f1, #12096d);
+  -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.upload-artwork-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff80; /* Slightly tinted white for visual depth */
+  border-radius: 16px; /* More rounded corners for a smoother design */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Elevated shadow for a modern look */
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 1.5s ease-in-out; 
+}
+
+.upload-artwork-container h2 {
+  text-align: center;
+  margin-bottom: 1.8rem; /* Increased spacing for breathing room */
+  color: #4e0099; /* Richer purple for stronger contrast */
+  font-size: 2rem; /* Larger font for improved readability */
+  font-weight: bold; /* Added emphasis */
+}
+
+.upload-artwork-container input[type="text"],
+.upload-artwork-container textarea,
+.upload-artwork-container input[type="file"] {
+  width: 100%;
+  padding: 14px; /* Increased padding for better usability */
+  margin-top: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd; /* Softer border for subtlety */
+  border-radius: 10px; /* More rounded edges for a sleek design */
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.4s ease, box-shadow 0.2s ease; /* Added interactive effects */
+}
+
+.upload-artwork-container input[type="text"]:focus,
+.upload-artwork-container textarea:focus,
+.upload-artwork-container input[type="file"]:focus {
+  border-color: #4e0099; /* Highlighted focus effect */
+  box-shadow: 0 0 5px rgba(78, 0, 153, 0.3); /* Subtle glow */
+  outline: none;
+}
+
+.upload-artwork-container button {
+  width: 100%;
+  padding: 14px; /* Larger padding for better tap/click area */
+  background: linear-gradient(to right, #4B0082, #FF1493, #4B0082);
+  color: #ffffff;
+  font-size: 1.2rem; /* Larger text for better readability */
+  font-weight: bold;
+  border: none;
+  border-radius: 10px; /* Consistent rounded style */
+  cursor: pointer;
+  transition: background-color 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Enhanced interactivity */
+}
+
+.upload-artwork-container button:hover {
+  background: linear-gradient(to right, #12096d, #0592f1, #12096d);
+  box-shadow: 0 5px 15px rgba(78, 0, 153, 0.4); /* Dynamic hover shadow */
+  transform: translateY(-2px); /* Hover lift effect */
+}
+
+.upload-artwork-container p {
+  margin-top: 1.2rem;
+  text-align: center;
+  color: #444; /* Slightly darker for improved readability */
+  font-size: 1rem; /* Adjusted font size */
+  font-style: italic; /* Added subtle styling */
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; /* Increased spacing */
+}
+
+.image-preview {
+  max-width: 120px; /* Larger preview size for better visibility */
+  border-radius: 14px; /* More rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger emphasis */
+  transition: transform 0.4s ease, box-shadow 0.3s ease; /* Added hover interaction */
+}
+
+.image-preview:hover {
+  transform: scale(1.1); /* Slightly larger hover effect */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Enhanced hover shadow */
+}

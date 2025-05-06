@@ -1,0 +1,150 @@
+/* Center the login form */
+
+.login-page {
+   /* background: linear-gradient(-215deg,rgb(255, 149, 0),yellow,rgb(255, 149, 0));*/
+    background: linear-gradient(-205deg,#0034b8,#0fcbff,#0034b8);
+   height: 100vh;
+   cursor: url('../../assets/bluepntbrsh.cur'), auto;
+    
+}
+
+.top{
+    text-align: center;
+    
+    animation: fadeIn 2s forwards;
+    padding-top: 30px;
+}
+
+.top h1{
+    margin-top: 100px;
+    font-size: 5rem;
+    font-weight: bold;
+    animation: fadeIn 2s forwards;
+    background: #ffffff;
+    -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: #000000;
+}
+.top h1:hover{
+    transform: translateY(-6px);
+}
+.top p{
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5px;
+    animation: fadeIn 2s forwards;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.login-container h2{
+    background: linear-gradient(to right, #37025c,#37025c, #7b03d1,#37025c, #37025c);
+    -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 30px;
+      
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: #ffffff80;
+    animation: fadeIn 2s forwards;
+    margin-top: -10px;
+    
+}
+.login-container:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+
+}
+/* Input Fields */
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #37025c;
+    cursor: url('../../assets/bluepntbrsh.cur'), auto;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #ffffff84;
+}
+
+/* Error Message */
+.error {
+    color: #f44336; /* Red color for errors */
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Button */
+.sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg,#4B0082, #fb14ff,#4B0082);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.sign-in-button:hover {
+    background: linear-gradient(90deg,#005125, #00ff59,#005125);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/* Signup Link */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #4B0082;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    
+}
+
+
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

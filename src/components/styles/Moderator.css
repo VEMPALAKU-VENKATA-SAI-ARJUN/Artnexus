@@ -1,0 +1,123 @@
+.moderator-page{
+  background: linear-gradient(-205deg,#0034b8,#0fcbff,#0034b8);
+  height: 100vh;
+  cursor: url('../../assets/bluepntbrsh.cur'), auto;
+  text-align: center;
+    
+}
+.moderator-page h2{
+    background: linear-gradient(to right, #a5a5a5, #ffffff, #a5a5a5);
+  -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.moderator-page {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .moderator-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .no-artworks-message {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .artworks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .artwork-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: max-content;
+    text-align: center;
+   
+  }
+  
+  .artwork-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .artwork-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .artwork-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .artwork-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  .artwork-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 0.5rem;
+  }
+  
+  .artwork-tags {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0.5rem;
+  }
+  
+  .artwork-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .approve-btn, .reject-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .approve-btn {
+    background: linear-gradient(to right, #4B0082, #FF1493, #4B0082);
+    color: #fff;
+  }
+  
+  .approve-btn:hover {
+    background: linear-gradient(to right, #043718, #0cc935, #043718);
+
+  }
+  
+  .reject-btn {
+    background: linear-gradient(to right, #4B0082, #FF1493, #4B0082);
+    color: #fff;
+  }
+  
+  .reject-btn:hover {
+    background: linear-gradient(to right,#410707,#ff0000,#410707) ;
+  }
+  

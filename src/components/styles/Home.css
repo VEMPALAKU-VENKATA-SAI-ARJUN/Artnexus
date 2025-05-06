@@ -1,0 +1,136 @@
+/* GLOBAL RESET */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    cursor: url('../../assets/bluepntbrsh.cur'), auto;
+}
+
+/* HOME CONTAINER */
+.home {
+    background-color: white;
+    padding-top: 80px;
+    cursor: url('../../assets/bluepntbrsh.cur'), auto;
+}
+
+/* TITLE SECTION */
+.title-container {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.title {
+    font-size: 130px;
+    font-weight: bold;
+  /*  background: linear-gradient(to right, #0f0317, #FF1493, #0f0317);*/
+    background: linear-gradient(115deg,#2f00ff,#0fcbff,#2f00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    text-align: center;
+    margin: 30px 20px 40px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6A0572;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+    text-align: center;
+}
+
+/* CONTENT SECTIONS */
+.content {
+    padding: 40px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content h2 {
+    text-align: center;
+    color: #6A0572;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* TRENDING ARTWORKS */
+.artworks-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    scrollbar-width: thin;
+}
+
+.artwork-card {
+    min-width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.artwork-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* FEATURED ARTISTS */
+.artists-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #FF1493;
+}
+
+/* WHY CHOOSE SECTION */
+.why-choose ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #6A0572;
+}
+
+.why-choose li {
+    margin-bottom: 15px;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
