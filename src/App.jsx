@@ -10,8 +10,9 @@ import Moderator from "./pages/Moderator";
 import Signup from "./pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ModeratorRoute from "./components/ModeratorRoute";
-import { useAuth } from "../src/context/Authcontext"; // ✅ Use context instead of localStorage
+import { useAuth } from "./context/Authcontext"; // ✅ Correct path
 import MyPurchases from "./pages/MyPurchases";
+import ArtworkDetails from "./pages/ArtworkDetails"; // ✅ Import missing component
 
 const App = () => {
   const location = useLocation();
@@ -34,7 +35,7 @@ const App = () => {
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/gallery" element={<ProtectedRoute><Gallery /></ProtectedRoute>} />
         <Route path="/gallery/:id" element={<ProtectedRoute><ArtworkDetails /></ProtectedRoute>} />
-         <Route path="/my-purchases" element={<ProtectedRoute><MyPurchases /></ProtectedRoute>} />
+        <Route path="/my-purchases" element={<ProtectedRoute><MyPurchases /></ProtectedRoute>} />
         <Route path="/upload" element={<ProtectedRoute><Upload /></ProtectedRoute>} />
         <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
