@@ -26,7 +26,7 @@ const App = () => {
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         {/*  Public landing page  */}
-       <Route path="/" element={<Homepage />} />
+       <Route path="/" element={<Home />} />
 
         {/* Auth pages */}
 
