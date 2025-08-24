@@ -25,8 +25,10 @@ const App = () => {
     <>
       {!shouldHideNavbar && <Navbar />}
       <Routes>
-        {/* Redirect root to login or home based on user */}
-        <Route path="/" element={<Navigate to="/home" />} />
+        {/*  Public landing page  */}
+       <Route path="/" element={<Homepage />} />
+
+        {/* Auth pages */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
