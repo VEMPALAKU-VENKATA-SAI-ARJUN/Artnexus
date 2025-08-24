@@ -26,7 +26,7 @@ const App = () => {
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         {/* Redirect root to login or home based on user */}
-        <Route path="/" element={user ? <Navigate to="/home" /> : <Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
