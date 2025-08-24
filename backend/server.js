@@ -16,7 +16,7 @@ connectDB(); // MongoDB connection handled here
 
 // 🔹 Middleware
 app.use(cors({
-  origin: "http://localhost:5173", "https://artnexus.vercel.app"],// Frontend origin
+  origin: ["http://localhost:5173", "https://artnexus.vercel.app"],// Frontend origin
   credentials: true,
   allowedHeaders: ["Authorization", "Content-Type"],
   exposedHeaders: ["Authorization"]
