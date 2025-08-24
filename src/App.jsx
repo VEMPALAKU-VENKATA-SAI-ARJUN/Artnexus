@@ -11,7 +11,6 @@ import Signup from "./pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ModeratorRoute from "./components/ModeratorRoute";
 import { useAuth } from "../src/context/Authcontext"; // ✅ Use context instead of localStorage
-import ArtworkDetails from "./pages/artworkDetails";
 import MyPurchases from "./pages/MyPurchases";
 
 const App = () => {
