@@ -46,7 +46,7 @@ function Login() {
     try {
       console.log("Attempting to log in with:", { email, password });
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://artnexus-backend-60fj.onrender.com/api/auth/login",
         { email, password },
         {
           headers: { "Content-Type": "application/json" },
