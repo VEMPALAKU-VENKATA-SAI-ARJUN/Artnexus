@@ -8,7 +8,7 @@ const Moderator = () => {
   useEffect(() => {
     const fetchPendingArtworks = async () => {
       try {
-        const res = await axios.get("/api/artworks/pending", {
+        const res = await axios.get("https://artnexus-backend-60fj.onrender.com/api/artworks/pending", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -32,7 +32,7 @@ const Moderator = () => {
 
   const handleApprove = async (id) => {
     try {
-      const res = await axios.put(`/api/artworks/approve/${id}`, {}, {
+      const res = await axios.put(`https://artnexus-backend-60fj.onrender.com/api/artworks/approve/${id}`, {}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -48,7 +48,7 @@ const Moderator = () => {
 
   const handleReject = async (id) => {
     try {
-      const res = await axios.put(`/api/artworks/reject/${id}`, {}, {
+      const res = await axios.put(`https://artnexus-backend-60fj.onrender.com/api/artworks/reject/${id}`, {}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
