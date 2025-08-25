@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../components/styles/Moderator.css";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Moderator = () => {
   const [pendingArtworks, setPendingArtworks] = useState([]);
@@ -71,9 +72,7 @@ const Moderator = () => {
         <div className="artworks-list">
           {pendingArtworks.map(art => (
             <div key={art._id} className="artwork-card">
-              <img
-                <img
-                src={`https://artnexus-backend-60fj.onrender.com${art.image}`}
+              <img src={`${BACKEND_URL}${art.image}`} 
                 alt={art.title}
                 className="artwork-image"
               />
