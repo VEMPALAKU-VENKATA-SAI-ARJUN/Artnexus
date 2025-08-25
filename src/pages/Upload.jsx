@@ -54,7 +54,7 @@ function UploadArtwork() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/artworks/upload",
+        "https://artnexus-backend-60fj.onrender.com/api/artworks/upload",
         formData,
         {
           headers: {
