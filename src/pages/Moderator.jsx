@@ -72,7 +72,8 @@ const Moderator = () => {
           {pendingArtworks.map(art => (
             <div key={art._id} className="artwork-card">
               <img
-                src={`http://localhost:5000${art.image}`}
+                <img
+                src={`https://artnexus-backend-60fj.onrender.com${art.image}`}
                 alt={art.title}
                 className="artwork-image"
               />
