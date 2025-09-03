@@ -1,12 +1,14 @@
-# React + Vite
+# Artnexus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ArtNexus is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js) where artists can showcase their artworks, buyers can purchase them, and moderators ensure quality and compliance.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👥 Roles:\
+Artist → Upload and manage artworks\
+Buyer → Browse and purchase artworks\
+Moderator → Approve or reject artworks\
+Admin → Manage users and platform settings\
+🛠️ Tech Stack:\
+MERN stack\
+Authentication: JWT (role-based)\
+File Uploads: Multer\
+Checkout Artnexus: https://artnexus.vercel.app/
