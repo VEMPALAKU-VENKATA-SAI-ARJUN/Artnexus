@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="home">
       {/* Navbar will be included by Navbar component */}
-      
+    
       {/* Title Section */}
       <div className="title-container">
         <h1 className="title">ArtNexus</h1>
