@@ -1,6 +1,10 @@
 import React from "react";
 import "../components/styles/Home.css"; // Your custom CSS for Home
+import MBK from "../assets/MBK.jpg";
+import UPMA from "../assets/UPMA.jpg";
+import SHANKS from "../assets/SHANKS.jpg";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 function Home() {
   return (
     <div className="home">
@@ -21,7 +25,7 @@ This is your chance to elevate your artistic journey. Start now and let this pla
         <h2>🔥 Trending Artworks</h2>
         <div className="artworks-container">
           <div className="artwork-card">
-            <img src="src/assets/MBK.jpg" alt="Artwork 1" />
+          <img src={MBK} alt="Artwork 1" />
             <p>Title: Mahesh</p>
             <p>Artist: Venkata </p>
           </div>
