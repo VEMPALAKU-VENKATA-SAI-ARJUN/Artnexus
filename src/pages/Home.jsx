@@ -30,12 +30,12 @@ This is your chance to elevate your artistic journey. Start now and let this pla
             <p>Artist: Venkata </p>
           </div>
           <div className="artwork-card">
-            <img src="src/assets/UPMA.jpg" alt="Artwork 2" />
+           <img src={UPMA} alt="Artwork 2" />
             <p>Title: The woman </p>
             <p>Artist: Sai </p>
           </div>
           <div className="artwork-card">
-            <img src="src/assets/SHANKS.jpg" alt="Artwork 3" />
+            <img src={SHANKS} alt="Artwork 3" />
             <p>Title: The Conquerer </p>
             <p>Artist: Arjun </p>
           </div>
